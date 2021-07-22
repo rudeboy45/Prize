@@ -59,10 +59,8 @@ class TableViewController: UITableViewController {
         cell.nameCell.text = currentItem["name"] as? String
         cell.costCell.text = "Price: $\(priceItem)"
         totalCostLabel.text = string("Total cost: $", for: priceItem + (20.0))
-//        totalCostLabel.text = "Total cost: $\(price)"
 //        cell.textLabel?.text = currentItem["name"] as? String
 //        cell.textLabel?.text = currentItem["price"] as? String
-//        costLabel.text = "Cумма: $\(price)"
         
         if (currentItem["isCompleted"] as? Bool) == true {
             cell.accessoryType = .checkmark
