@@ -38,10 +38,6 @@ class TableViewController: UITableViewController {
         tableView.rowHeight = 60
         tableView.tableFooterView = UIView()  //(for view cell) 15.07
 //        tableView.backgroundColor = UIColor
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 

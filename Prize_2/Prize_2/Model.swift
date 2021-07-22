@@ -27,19 +27,6 @@ var ToAddItems: [[String: Any]] {
         }
     }
 }
-//var price: [Float] {
-//    set {
-//        UserDefaults.standard.setValue(newValue, forKey: "price")
-//        UserDefaults.standard.synchronize()
-//    }
-//    get {
-//        if let array  = UserDefaults.standard.array(forKey: "price") as? [Float] {
-//            price = array
-//            } else {
-//                price = []
-//            }
-//    return []}
-//}
 
 func addItem(nameItem: String, isCompleted: Bool = false) {
     ToAddItems.append(["name": nameItem, "isCompleted": isCompleted])
