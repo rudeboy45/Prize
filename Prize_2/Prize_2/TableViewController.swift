@@ -64,11 +64,8 @@ class TableViewController: UITableViewController {
         
         if (currentItem["isCompleted"] as? Bool) == true {
             cell.accessoryType = .checkmark
-//            cell.costCell?.text = "Price: $\(price)"
-            
         } else {
             cell.accessoryType = .none
-//            cell.costCell?.text = nil
         }
         
         return cell
@@ -101,8 +98,11 @@ class TableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         if changeState(at: indexPath.row) {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+//            cell.costCell?.text = "Price: $\(price)"
+            
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
+//            cell.costCell?.text = nil
         }
 
     }
